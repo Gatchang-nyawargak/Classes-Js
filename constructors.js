@@ -70,13 +70,13 @@ class Question {
        this.nextQuestion();
     }
    }
-const question1 = new Question("What is the capital of France?", ["Paris", "London", "Berlin", "Madrid"], "Paris");
-const question2 = new Question("What is the capital of Germany?", ["Paris", "London", "Berlin", "Madrid"], "Berlin");
+const question1 = new Question("Which of the following is not a programming language?", ["Javascript", "Python", "Kotlin", "HTML"], "HTML");
+const question2 = new Question("Which of the following is not a Jascript syntax?", ["function", "object.key", "length-1", "fun main"], "fun main");
 const myQuiz = new Quiz();
 myQuiz.addQuestion(question1);
 myQuiz.addQuestion(question2);
-myQuiz.submitAnswer("Paris");
-myQuiz.submitAnswer("London");
+myQuiz.submitAnswer("HTML");
+myQuiz.submitAnswer("HTML");
 myQuiz.nextQuestion();
-myQuiz.submitAnswer("Berlin");
+myQuiz.submitAnswer("fun main");
 console.log(`Your final score is: ${myQuiz.score}`);
